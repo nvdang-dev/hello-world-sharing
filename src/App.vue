@@ -1,18 +1,13 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
+    <olive-button />
+     <olive-chip />
   </v-app>
 </template>
 
 <script>
 export default {
   name: "App",
-
-  components: {},
 
   data: () => ({
     //

@@ -4,9 +4,9 @@
 	else if(typeof define === 'function' && define.amd)
 		define([], factory);
 	else if(typeof exports === 'object')
-		exports["vue-hello-world-simple"] = factory(require("vue"));
+		exports["vuejs-shared-components"] = factory(require("vue"));
 	else
-		root["vue-hello-world-simple"] = factory(root["Vue"]);
+		root["vuejs-shared-components"] = factory(root["Vue"]);
 })((typeof self !== 'undefined' ? self : this), function(__WEBPACK_EXTERNAL_MODULE__8bbf__) {
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
@@ -1654,6 +1654,13 @@ fixRegExpWellKnownSymbolLogic('match', function (MATCH, nativeMatch, maybeCallNa
   ];
 });
 
+
+/***/ }),
+
+/***/ "4804":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -3374,6 +3381,13 @@ module.exports = function (S, index, unicode) {
   return index + (unicode ? charAt(S, index).length : 1);
 };
 
+
+/***/ }),
+
+/***/ "8adc":
+/***/ (function(module, exports, __webpack_require__) {
+
+// extracted by mini-css-extract-plugin
 
 /***/ }),
 
@@ -6512,12 +6526,12 @@ if (typeof window !== 'undefined') {
 // Indicate to webpack that this file can be concatenated
 /* harmony default export */ var setPublicPath = (null);
 
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"7b04ac9e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/HelloWorld.vue?vue&type=template&id=0417327c&
-var HelloWorldvue_type_template_id_0417327c_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('v-btn',{attrs:{"depressed":"","color":"error"}},[_vm._v(" Primary ")])],1)}
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"7b04ac9e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/OliveButton.vue?vue&type=template&id=4c516fb3&
+var OliveButtonvue_type_template_id_4c516fb3_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('v-btn',{attrs:{"depressed":"","color":"error"}},[_vm._v(" "+_vm._s(_vm.text)+" ")])],1)}
 var staticRenderFns = []
 
 
-// CONCATENATED MODULE: ./src/components/HelloWorld.vue?vue&type=template&id=0417327c&
+// CONCATENATED MODULE: ./src/components/OliveButton.vue?vue&type=template&id=4c516fb3&
 
 // EXTERNAL MODULE: ./node_modules/core-js/modules/es.symbol.js
 var es_symbol = __webpack_require__("a4d3");
@@ -10968,10 +10982,7 @@ var baseMixins = mixins(components_VSheet, routable, positionable, sizeable, fac
     return h(tag, this.disabled ? data : setColor(this.color, data), children);
   }
 }));
-// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/HelloWorld.vue?vue&type=script&lang=js&
-//
-//
-//
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/OliveButton.vue?vue&type=script&lang=js&
 //
 //
 //
@@ -10979,14 +10990,20 @@ var baseMixins = mixins(components_VSheet, routable, positionable, sizeable, fac
 //
 //
 
-/* harmony default export */ var HelloWorldvue_type_script_lang_js_ = ({
-  name: 'HelloWorld',
+/* harmony default export */ var OliveButtonvue_type_script_lang_js_ = ({
+  name: "OliveButton",
   components: {
     VBtn: VBtn_VBtn
+  },
+  props: {
+    text: {
+      default: "Olive Button",
+      type: String
+    }
   }
 });
-// CONCATENATED MODULE: ./src/components/HelloWorld.vue?vue&type=script&lang=js&
- /* harmony default export */ var components_HelloWorldvue_type_script_lang_js_ = (HelloWorldvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/OliveButton.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_OliveButtonvue_type_script_lang_js_ = (OliveButtonvue_type_script_lang_js_); 
 // CONCATENATED MODULE: ./node_modules/vue-loader/lib/runtime/componentNormalizer.js
 /* globals __VUE_SSR_CONTEXT__ */
 
@@ -11091,7 +11108,7 @@ function normalizeComponent (
 var installComponents = __webpack_require__("6544");
 var installComponents_default = /*#__PURE__*/__webpack_require__.n(installComponents);
 
-// CONCATENATED MODULE: ./src/components/HelloWorld.vue
+// CONCATENATED MODULE: ./src/components/OliveButton.vue
 
 
 
@@ -11099,9 +11116,9 @@ var installComponents_default = /*#__PURE__*/__webpack_require__.n(installCompon
 
 /* normalize component */
 
-var HelloWorld_component = normalizeComponent(
-  components_HelloWorldvue_type_script_lang_js_,
-  HelloWorldvue_type_template_id_0417327c_render,
+var OliveButton_component = normalizeComponent(
+  components_OliveButtonvue_type_script_lang_js_,
+  OliveButtonvue_type_template_id_4c516fb3_render,
   staticRenderFns,
   false,
   null,
@@ -11110,32 +11127,935 @@ var HelloWorld_component = normalizeComponent(
   
 )
 
-/* harmony default export */ var HelloWorld = (HelloWorld_component.exports);
+/* harmony default export */ var OliveButton = (OliveButton_component.exports);
 
 /* vuetify-loader */
 
 
-installComponents_default()(HelloWorld_component, {VBtn: VBtn_VBtn})
+installComponents_default()(OliveButton_component, {VBtn: VBtn_VBtn})
 
-// CONCATENATED MODULE: ./src/install.js
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js?{"cacheDirectory":"node_modules/.cache/vue-loader","cacheIdentifier":"7b04ac9e-vue-loader-template"}!./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/OliveChip.vue?vue&type=template&id=ff3627b8&
+var OliveChipvue_type_template_id_ff3627b8_render = function () {var _vm=this;var _h=_vm.$createElement;var _c=_vm._self._c||_h;return _c('div',[_c('v-chip',{staticClass:"ma-2",attrs:{"color":"secondary"}},[_vm._v(" "+_vm._s(_vm.text)+" ")])],1)}
+var OliveChipvue_type_template_id_ff3627b8_staticRenderFns = []
 
-var HelloWorldSimple = {
+
+// CONCATENATED MODULE: ./src/components/OliveChip.vue?vue&type=template&id=ff3627b8&
+
+// EXTERNAL MODULE: ./node_modules/vuetify/src/components/VChip/VChip.sass
+var VChip = __webpack_require__("8adc");
+
+// CONCATENATED MODULE: ./node_modules/vuetify/lib/util/mergeData.js
+
+
+
+
+
+
+
+
+
+var pattern = {
+  styleList: /;(?![^(]*\))/g,
+  styleProp: /:(.*)/
+};
+
+function parseStyle(style) {
+  var styleMap = {};
+
+  var _iterator = _createForOfIteratorHelper(style.split(pattern.styleList)),
+      _step;
+
+  try {
+    for (_iterator.s(); !(_step = _iterator.n()).done;) {
+      var s = _step.value;
+
+      var _s$split = s.split(pattern.styleProp),
+          _s$split2 = _slicedToArray(_s$split, 2),
+          key = _s$split2[0],
+          val = _s$split2[1];
+
+      key = key.trim();
+
+      if (!key) {
+        continue;
+      } // May be undefined if the `key: value` pair is incomplete.
+
+
+      if (typeof val === 'string') {
+        val = val.trim();
+      }
+
+      styleMap[camelize(key)] = val;
+    }
+  } catch (err) {
+    _iterator.e(err);
+  } finally {
+    _iterator.f();
+  }
+
+  return styleMap;
+}
+
+function mergeData() {
+  var mergeTarget = {};
+  var i = arguments.length;
+  var prop; // Allow for variadic argument length.
+
+  while (i--) {
+    // Iterate through the data properties and execute merge strategies
+    // Object.keys eliminates need for hasOwnProperty call
+    for (var _i = 0, _Object$keys = Object.keys(arguments[i]); _i < _Object$keys.length; _i++) {
+      prop = _Object$keys[_i];
+
+      switch (prop) {
+        // Array merge strategy (array concatenation)
+        case 'class':
+        case 'directives':
+          if (arguments[i][prop]) {
+            mergeTarget[prop] = mergeClasses(mergeTarget[prop], arguments[i][prop]);
+          }
+
+          break;
+
+        case 'style':
+          if (arguments[i][prop]) {
+            mergeTarget[prop] = mergeStyles(mergeTarget[prop], arguments[i][prop]);
+          }
+
+          break;
+        // Space delimited string concatenation strategy
+
+        case 'staticClass':
+          if (!arguments[i][prop]) {
+            break;
+          }
+
+          if (mergeTarget[prop] === undefined) {
+            mergeTarget[prop] = '';
+          }
+
+          if (mergeTarget[prop]) {
+            // Not an empty string, so concatenate
+            mergeTarget[prop] += ' ';
+          }
+
+          mergeTarget[prop] += arguments[i][prop].trim();
+          break;
+        // Object, the properties of which to merge via array merge strategy (array concatenation).
+        // Callback merge strategy merges callbacks to the beginning of the array,
+        // so that the last defined callback will be invoked first.
+        // This is done since to mimic how Object.assign merging
+        // uses the last given value to assign.
+
+        case 'on':
+        case 'nativeOn':
+          if (arguments[i][prop]) {
+            mergeTarget[prop] = mergeListeners(mergeTarget[prop], arguments[i][prop]);
+          }
+
+          break;
+        // Object merge strategy
+
+        case 'attrs':
+        case 'props':
+        case 'domProps':
+        case 'scopedSlots':
+        case 'staticStyle':
+        case 'hook':
+        case 'transition':
+          if (!arguments[i][prop]) {
+            break;
+          }
+
+          if (!mergeTarget[prop]) {
+            mergeTarget[prop] = {};
+          }
+
+          mergeTarget[prop] = _objectSpread2(_objectSpread2({}, arguments[i][prop]), mergeTarget[prop]);
+          break;
+        // Reassignment strategy (no merge)
+
+        default:
+          // slot, key, ref, tag, show, keepAlive
+          if (!mergeTarget[prop]) {
+            mergeTarget[prop] = arguments[i][prop];
+          }
+
+      }
+    }
+  }
+
+  return mergeTarget;
+}
+function mergeStyles(target, source) {
+  if (!target) return source;
+  if (!source) return target;
+  target = wrapInArray(typeof target === 'string' ? parseStyle(target) : target);
+  return target.concat(typeof source === 'string' ? parseStyle(source) : source);
+}
+function mergeClasses(target, source) {
+  if (!source) return target;
+  if (!target) return source;
+  return target ? wrapInArray(target).concat(source) : source;
+}
+function mergeListeners() {
+  if (!(arguments.length <= 0 ? undefined : arguments[0])) return arguments.length <= 1 ? undefined : arguments[1];
+  if (!(arguments.length <= 1 ? undefined : arguments[1])) return arguments.length <= 0 ? undefined : arguments[0];
+  var dest = {};
+
+  for (var i = 2; i--;) {
+    var arg = i < 0 || arguments.length <= i ? undefined : arguments[i];
+
+    for (var event in arg) {
+      if (!arg[event]) continue;
+
+      if (dest[event]) {
+        // Merge current listeners before (because we are iterating backwards).
+        // Note that neither "target" or "source" must be altered.
+        dest[event] = [].concat(arg[event], dest[event]);
+      } else {
+        // Straight assign.
+        dest[event] = arg[event];
+      }
+    }
+  }
+
+  return dest;
+}
+// CONCATENATED MODULE: ./node_modules/vuetify/lib/components/transitions/createTransition.js
+
+
+
+function mergeTransitions() {
+  var _Array;
+
+  var dest = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : [];
+
+  for (var _len = arguments.length, transitions = new Array(_len > 1 ? _len - 1 : 0), _key = 1; _key < _len; _key++) {
+    transitions[_key - 1] = arguments[_key];
+  }
+
+  /* eslint-disable-next-line no-array-constructor */
+  return (_Array = Array()).concat.apply(_Array, [dest].concat(transitions));
+}
+
+function createSimpleTransition(name) {
+  var origin = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'top center 0';
+  var mode = arguments.length > 2 ? arguments[2] : undefined;
+  return {
+    name: name,
+    functional: true,
+    props: {
+      group: {
+        type: Boolean,
+        default: false
+      },
+      hideOnLeave: {
+        type: Boolean,
+        default: false
+      },
+      leaveAbsolute: {
+        type: Boolean,
+        default: false
+      },
+      mode: {
+        type: String,
+        default: mode
+      },
+      origin: {
+        type: String,
+        default: origin
+      }
+    },
+    render: function render(h, context) {
+      var tag = "transition".concat(context.props.group ? '-group' : '');
+      var data = {
+        props: {
+          name: name,
+          mode: context.props.mode
+        },
+        on: {
+          beforeEnter: function beforeEnter(el) {
+            el.style.transformOrigin = context.props.origin;
+            el.style.webkitTransformOrigin = context.props.origin;
+          }
+        }
+      };
+
+      if (context.props.leaveAbsolute) {
+        data.on.leave = mergeTransitions(data.on.leave, function (el) {
+          var offsetTop = el.offsetTop,
+              offsetLeft = el.offsetLeft,
+              offsetWidth = el.offsetWidth,
+              offsetHeight = el.offsetHeight;
+          el._transitionInitialStyles = {
+            position: el.style.position,
+            top: el.style.top,
+            left: el.style.left,
+            width: el.style.width,
+            height: el.style.height
+          };
+          el.style.position = 'absolute';
+          el.style.top = offsetTop + 'px';
+          el.style.left = offsetLeft + 'px';
+          el.style.width = offsetWidth + 'px';
+          el.style.height = offsetHeight + 'px';
+        });
+        data.on.afterLeave = mergeTransitions(data.on.afterLeave, function (el) {
+          if (el && el._transitionInitialStyles) {
+            var _el$_transitionInitia = el._transitionInitialStyles,
+                position = _el$_transitionInitia.position,
+                top = _el$_transitionInitia.top,
+                left = _el$_transitionInitia.left,
+                width = _el$_transitionInitia.width,
+                height = _el$_transitionInitia.height;
+            delete el._transitionInitialStyles;
+            el.style.position = position || '';
+            el.style.top = top || '';
+            el.style.left = left || '';
+            el.style.width = width || '';
+            el.style.height = height || '';
+          }
+        });
+      }
+
+      if (context.props.hideOnLeave) {
+        data.on.leave = mergeTransitions(data.on.leave, function (el) {
+          el._initialDisplay = el.style.display;
+          el.style.display = 'none';
+        });
+        data.on.afterLeave = mergeTransitions(data.on.afterLeave, function (el) {
+          if (el) el.style.display = el._initialDisplay || '';
+        });
+      }
+
+      return h(tag, mergeData(context.data, data), context.children);
+    }
+  };
+}
+function createJavascriptTransition(name, functions) {
+  var mode = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : 'in-out';
+  return {
+    name: name,
+    functional: true,
+    props: {
+      mode: {
+        type: String,
+        default: mode
+      }
+    },
+    render: function render(h, context) {
+      return h('transition', mergeData(context.data, {
+        props: {
+          name: name
+        },
+        on: functions
+      }), context.children);
+    }
+  };
+}
+// CONCATENATED MODULE: ./node_modules/vuetify/lib/components/transitions/expand-transition.js
+
+
+/* harmony default export */ var expand_transition = (function () {
+  var expandedParentClass = arguments.length > 0 && arguments[0] !== undefined ? arguments[0] : '';
+  var x = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : false;
+  var sizeProperty = x ? 'width' : 'height';
+  var offsetProperty = "offset".concat(upperFirst(sizeProperty));
+  return {
+    beforeEnter: function beforeEnter(el) {
+      el._parent = el.parentNode;
+      el._initialStyle = _defineProperty({
+        transition: el.style.transition,
+        overflow: el.style.overflow
+      }, sizeProperty, el.style[sizeProperty]);
+    },
+    enter: function enter(el) {
+      var initialStyle = el._initialStyle;
+      el.style.setProperty('transition', 'none', 'important'); // Hide overflow to account for collapsed margins in the calculated height
+
+      el.style.overflow = 'hidden';
+      var offset = "".concat(el[offsetProperty], "px");
+      el.style[sizeProperty] = '0';
+      void el.offsetHeight; // force reflow
+
+      el.style.transition = initialStyle.transition;
+
+      if (expandedParentClass && el._parent) {
+        el._parent.classList.add(expandedParentClass);
+      }
+
+      requestAnimationFrame(function () {
+        el.style[sizeProperty] = offset;
+      });
+    },
+    afterEnter: resetStyles,
+    enterCancelled: resetStyles,
+    leave: function leave(el) {
+      el._initialStyle = _defineProperty({
+        transition: '',
+        overflow: el.style.overflow
+      }, sizeProperty, el.style[sizeProperty]);
+      el.style.overflow = 'hidden';
+      el.style[sizeProperty] = "".concat(el[offsetProperty], "px");
+      void el.offsetHeight; // force reflow
+
+      requestAnimationFrame(function () {
+        return el.style[sizeProperty] = '0';
+      });
+    },
+    afterLeave: afterLeave,
+    leaveCancelled: afterLeave
+  };
+
+  function afterLeave(el) {
+    if (expandedParentClass && el._parent) {
+      el._parent.classList.remove(expandedParentClass);
+    }
+
+    resetStyles(el);
+  }
+
+  function resetStyles(el) {
+    var size = el._initialStyle[sizeProperty];
+    el.style.overflow = el._initialStyle.overflow;
+    if (size != null) el.style[sizeProperty] = size;
+    delete el._initialStyle;
+  }
+});
+// CONCATENATED MODULE: ./node_modules/vuetify/lib/components/transitions/index.js
+
+ // Component specific transitions
+
+var VCarouselTransition = createSimpleTransition('carousel-transition');
+var VCarouselReverseTransition = createSimpleTransition('carousel-reverse-transition');
+var VTabTransition = createSimpleTransition('tab-transition');
+var VTabReverseTransition = createSimpleTransition('tab-reverse-transition');
+var VMenuTransition = createSimpleTransition('menu-transition');
+var VFabTransition = createSimpleTransition('fab-transition', 'center center', 'out-in'); // Generic transitions
+
+var VDialogTransition = createSimpleTransition('dialog-transition');
+var VDialogBottomTransition = createSimpleTransition('dialog-bottom-transition');
+var VDialogTopTransition = createSimpleTransition('dialog-top-transition');
+var VFadeTransition = createSimpleTransition('fade-transition');
+var VScaleTransition = createSimpleTransition('scale-transition');
+var VScrollXTransition = createSimpleTransition('scroll-x-transition');
+var VScrollXReverseTransition = createSimpleTransition('scroll-x-reverse-transition');
+var VScrollYTransition = createSimpleTransition('scroll-y-transition');
+var VScrollYReverseTransition = createSimpleTransition('scroll-y-reverse-transition');
+var VSlideXTransition = createSimpleTransition('slide-x-transition');
+var VSlideXReverseTransition = createSimpleTransition('slide-x-reverse-transition');
+var VSlideYTransition = createSimpleTransition('slide-y-transition');
+var VSlideYReverseTransition = createSimpleTransition('slide-y-reverse-transition'); // Javascript transitions
+
+var VExpandTransition = createJavascriptTransition('expand-transition', expand_transition());
+var VExpandXTransition = createJavascriptTransition('expand-x-transition', expand_transition('', true));
+/* harmony default export */ var transitions = ({
+  $_vuetify_subcomponents: {
+    VCarouselTransition: VCarouselTransition,
+    VCarouselReverseTransition: VCarouselReverseTransition,
+    VDialogTransition: VDialogTransition,
+    VDialogBottomTransition: VDialogBottomTransition,
+    VDialogTopTransition: VDialogTopTransition,
+    VFabTransition: VFabTransition,
+    VFadeTransition: VFadeTransition,
+    VMenuTransition: VMenuTransition,
+    VScaleTransition: VScaleTransition,
+    VScrollXTransition: VScrollXTransition,
+    VScrollXReverseTransition: VScrollXReverseTransition,
+    VScrollYTransition: VScrollYTransition,
+    VScrollYReverseTransition: VScrollYReverseTransition,
+    VSlideXTransition: VSlideXTransition,
+    VSlideXReverseTransition: VSlideXReverseTransition,
+    VSlideYTransition: VSlideYTransition,
+    VSlideYReverseTransition: VSlideYReverseTransition,
+    VTabReverseTransition: VTabReverseTransition,
+    VTabTransition: VTabTransition,
+    VExpandTransition: VExpandTransition,
+    VExpandXTransition: VExpandXTransition
+  }
+});
+// EXTERNAL MODULE: ./node_modules/vuetify/src/components/VIcon/VIcon.sass
+var VIcon = __webpack_require__("4804");
+
+// CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VIcon/VIcon.js
+
+
+
+
+
+
+
+
+ // Mixins
+
+
+
+
+ // Util
+
+ // Types
+
+
+
+var SIZE_MAP;
+
+(function (SIZE_MAP) {
+  SIZE_MAP["xSmall"] = "12px";
+  SIZE_MAP["small"] = "16px";
+  SIZE_MAP["default"] = "24px";
+  SIZE_MAP["medium"] = "28px";
+  SIZE_MAP["large"] = "36px";
+  SIZE_MAP["xLarge"] = "40px";
+})(SIZE_MAP || (SIZE_MAP = {}));
+
+function isFontAwesome5(iconType) {
+  return ['fas', 'far', 'fal', 'fab', 'fad', 'fak'].some(function (val) {
+    return iconType.includes(val);
+  });
+}
+
+function isSvgPath(icon) {
+  return /^[mzlhvcsqta]\s*[-+.0-9][^mlhvzcsqta]+/i.test(icon) && /[\dz]$/i.test(icon) && icon.length > 4;
+}
+
+var VIcon_VIcon = mixins(binds_attrs, colorable, sizeable, themeable
+/* @vue/component */
+).extend({
+  name: 'v-icon',
+  props: {
+    dense: Boolean,
+    disabled: Boolean,
+    left: Boolean,
+    right: Boolean,
+    size: [Number, String],
+    tag: {
+      type: String,
+      required: false,
+      default: 'i'
+    }
+  },
+  computed: {
+    medium: function medium() {
+      return false;
+    },
+    hasClickListener: function hasClickListener() {
+      return Boolean(this.listeners$.click || this.listeners$['!click']);
+    }
+  },
+  methods: {
+    getIcon: function getIcon() {
+      var iconName = '';
+      if (this.$slots.default) iconName = this.$slots.default[0].text.trim();
+      return remapInternalIcon(this, iconName);
+    },
+    getSize: function getSize() {
+      var sizes = {
+        xSmall: this.xSmall,
+        small: this.small,
+        medium: this.medium,
+        large: this.large,
+        xLarge: this.xLarge
+      };
+      var explicitSize = keys(sizes).find(function (key) {
+        return sizes[key];
+      });
+      return explicitSize && SIZE_MAP[explicitSize] || convertToUnit(this.size);
+    },
+    // Component data for both font icon and SVG wrapper span
+    getDefaultData: function getDefaultData() {
+      return {
+        staticClass: 'v-icon notranslate',
+        class: {
+          'v-icon--disabled': this.disabled,
+          'v-icon--left': this.left,
+          'v-icon--link': this.hasClickListener,
+          'v-icon--right': this.right,
+          'v-icon--dense': this.dense
+        },
+        attrs: _objectSpread2({
+          'aria-hidden': !this.hasClickListener,
+          disabled: this.hasClickListener && this.disabled,
+          type: this.hasClickListener ? 'button' : undefined
+        }, this.attrs$),
+        on: this.listeners$
+      };
+    },
+    getSvgWrapperData: function getSvgWrapperData() {
+      var fontSize = this.getSize();
+
+      var wrapperData = _objectSpread2(_objectSpread2({}, this.getDefaultData()), {}, {
+        style: fontSize ? {
+          fontSize: fontSize,
+          height: fontSize,
+          width: fontSize
+        } : undefined
+      });
+
+      this.applyColors(wrapperData);
+      return wrapperData;
+    },
+    applyColors: function applyColors(data) {
+      data.class = _objectSpread2(_objectSpread2({}, data.class), this.themeClasses);
+      this.setTextColor(this.color, data);
+    },
+    renderFontIcon: function renderFontIcon(icon, h) {
+      var newChildren = [];
+      var data = this.getDefaultData();
+      var iconType = 'material-icons'; // Material Icon delimiter is _
+      // https://material.io/icons/
+
+      var delimiterIndex = icon.indexOf('-');
+      var isMaterialIcon = delimiterIndex <= -1;
+
+      if (isMaterialIcon) {
+        // Material icon uses ligatures.
+        newChildren.push(icon);
+      } else {
+        iconType = icon.slice(0, delimiterIndex);
+        if (isFontAwesome5(iconType)) iconType = '';
+      }
+
+      data.class[iconType] = true;
+      data.class[icon] = !isMaterialIcon;
+      var fontSize = this.getSize();
+      if (fontSize) data.style = {
+        fontSize: fontSize
+      };
+      this.applyColors(data);
+      return h(this.hasClickListener ? 'button' : this.tag, data, newChildren);
+    },
+    renderSvgIcon: function renderSvgIcon(icon, h) {
+      var svgData = {
+        class: 'v-icon__svg',
+        attrs: {
+          xmlns: 'http://www.w3.org/2000/svg',
+          viewBox: '0 0 24 24',
+          role: 'img',
+          'aria-hidden': true
+        }
+      };
+      var size = this.getSize();
+
+      if (size) {
+        svgData.style = {
+          fontSize: size,
+          height: size,
+          width: size
+        };
+      }
+
+      return h(this.hasClickListener ? 'button' : 'span', this.getSvgWrapperData(), [h('svg', svgData, [h('path', {
+        attrs: {
+          d: icon
+        }
+      })])]);
+    },
+    renderSvgIconComponent: function renderSvgIconComponent(icon, h) {
+      var data = {
+        class: {
+          'v-icon__component': true
+        }
+      };
+      var size = this.getSize();
+
+      if (size) {
+        data.style = {
+          fontSize: size,
+          height: size,
+          width: size
+        };
+      }
+
+      this.applyColors(data);
+      var component = icon.component;
+      data.props = icon.props;
+      data.nativeOn = data.on;
+      return h(this.hasClickListener ? 'button' : 'span', this.getSvgWrapperData(), [h(component, data)]);
+    }
+  },
+  render: function render(h) {
+    var icon = this.getIcon();
+
+    if (typeof icon === 'string') {
+      if (isSvgPath(icon)) {
+        return this.renderSvgIcon(icon, h);
+      }
+
+      return this.renderFontIcon(icon, h);
+    }
+
+    return this.renderSvgIconComponent(icon, h);
+  }
+});
+/* harmony default export */ var components_VIcon_VIcon = (external_commonjs_vue_commonjs2_vue_root_Vue_default.a.extend({
+  name: 'v-icon',
+  $_wrapperFor: VIcon_VIcon,
+  functional: true,
+  render: function render(h, _ref) {
+    var data = _ref.data,
+        children = _ref.children;
+    var iconName = ''; // Support usage of v-text and v-html
+
+    if (data.domProps) {
+      iconName = data.domProps.textContent || data.domProps.innerHTML || iconName; // Remove nodes so it doesn't
+      // overwrite our changes
+
+      delete data.domProps.textContent;
+      delete data.domProps.innerHTML;
+    }
+
+    return h(VIcon_VIcon, data, iconName ? [iconName] : children);
+  }
+}));
+// CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VIcon/index.js
+
+
+/* harmony default export */ var components_VIcon = (components_VIcon_VIcon);
+// CONCATENATED MODULE: ./node_modules/vuetify/lib/components/VChip/VChip.js
+
+
+
+// Styles
+
+ // Components
+
+
+ // Mixins
+
+
+
+
+
+
+ // Utilities
+
+
+/* @vue/component */
+
+/* harmony default export */ var VChip_VChip = (mixins(colorable, sizeable, routable, themeable, factory('chipGroup'), toggleable_factory('inputValue')).extend({
+  name: 'v-chip',
+  props: {
+    active: {
+      type: Boolean,
+      default: true
+    },
+    activeClass: {
+      type: String,
+      default: function _default() {
+        if (!this.chipGroup) return '';
+        return this.chipGroup.activeClass;
+      }
+    },
+    close: Boolean,
+    closeIcon: {
+      type: String,
+      default: '$delete'
+    },
+    closeLabel: {
+      type: String,
+      default: '$vuetify.close'
+    },
+    disabled: Boolean,
+    draggable: Boolean,
+    filter: Boolean,
+    filterIcon: {
+      type: String,
+      default: '$complete'
+    },
+    label: Boolean,
+    link: Boolean,
+    outlined: Boolean,
+    pill: Boolean,
+    tag: {
+      type: String,
+      default: 'span'
+    },
+    textColor: String,
+    value: null
+  },
+  data: function data() {
+    return {
+      proxyClass: 'v-chip--active'
+    };
+  },
+  computed: {
+    classes: function classes() {
+      return _objectSpread2(_objectSpread2(_objectSpread2(_objectSpread2({
+        'v-chip': true
+      }, routable.options.computed.classes.call(this)), {}, {
+        'v-chip--clickable': this.isClickable,
+        'v-chip--disabled': this.disabled,
+        'v-chip--draggable': this.draggable,
+        'v-chip--label': this.label,
+        'v-chip--link': this.isLink,
+        'v-chip--no-color': !this.color,
+        'v-chip--outlined': this.outlined,
+        'v-chip--pill': this.pill,
+        'v-chip--removable': this.hasClose
+      }, this.themeClasses), this.sizeableClasses), this.groupClasses);
+    },
+    hasClose: function hasClose() {
+      return Boolean(this.close);
+    },
+    isClickable: function isClickable() {
+      return Boolean(routable.options.computed.isClickable.call(this) || this.chipGroup);
+    }
+  },
+  created: function created() {
+    var _this = this;
+
+    var breakingProps = [['outline', 'outlined'], ['selected', 'input-value'], ['value', 'active'], ['@input', '@active.sync']];
+    /* istanbul ignore next */
+
+    breakingProps.forEach(function (_ref) {
+      var _ref2 = _slicedToArray(_ref, 2),
+          original = _ref2[0],
+          replacement = _ref2[1];
+
+      if (_this.$attrs.hasOwnProperty(original)) breaking(original, replacement, _this);
+    });
+  },
+  methods: {
+    click: function click(e) {
+      this.$emit('click', e);
+      this.chipGroup && this.toggle();
+    },
+    genFilter: function genFilter() {
+      var children = [];
+
+      if (this.isActive) {
+        children.push(this.$createElement(components_VIcon, {
+          staticClass: 'v-chip__filter',
+          props: {
+            left: true
+          }
+        }, this.filterIcon));
+      }
+
+      return this.$createElement(VExpandXTransition, children);
+    },
+    genClose: function genClose() {
+      var _this2 = this;
+
+      return this.$createElement(components_VIcon, {
+        staticClass: 'v-chip__close',
+        props: {
+          right: true,
+          size: 18
+        },
+        attrs: {
+          'aria-label': this.$vuetify.lang.t(this.closeLabel)
+        },
+        on: {
+          click: function click(e) {
+            e.stopPropagation();
+            e.preventDefault();
+
+            _this2.$emit('click:close');
+
+            _this2.$emit('update:active', false);
+          }
+        }
+      }, this.closeIcon);
+    },
+    genContent: function genContent() {
+      return this.$createElement('span', {
+        staticClass: 'v-chip__content'
+      }, [this.filter && this.genFilter(), this.$slots.default, this.hasClose && this.genClose()]);
+    }
+  },
+  render: function render(h) {
+    var children = [this.genContent()];
+
+    var _this$generateRouteLi = this.generateRouteLink(),
+        tag = _this$generateRouteLi.tag,
+        data = _this$generateRouteLi.data;
+
+    data.attrs = _objectSpread2(_objectSpread2({}, data.attrs), {}, {
+      draggable: this.draggable ? 'true' : undefined,
+      tabindex: this.chipGroup && !this.disabled ? 0 : data.attrs.tabindex
+    });
+    data.directives.push({
+      name: 'show',
+      value: this.active
+    });
+    data = this.setBackgroundColor(this.color, data);
+    var color = this.textColor || this.outlined && this.color;
+    return h(tag, this.setTextColor(color, data), children);
+  }
+}));
+// CONCATENATED MODULE: ./node_modules/cache-loader/dist/cjs.js??ref--12-0!./node_modules/thread-loader/dist/cjs.js!./node_modules/babel-loader/lib!./node_modules/cache-loader/dist/cjs.js??ref--0-0!./node_modules/vue-loader/lib??vue-loader-options!./src/components/OliveChip.vue?vue&type=script&lang=js&
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ var OliveChipvue_type_script_lang_js_ = ({
+  name: "OliveChip",
+  components: {
+    VChip: VChip_VChip
+  },
+  props: {
+    text: {
+      default: "Olive Chip",
+      type: String
+    }
+  }
+});
+// CONCATENATED MODULE: ./src/components/OliveChip.vue?vue&type=script&lang=js&
+ /* harmony default export */ var components_OliveChipvue_type_script_lang_js_ = (OliveChipvue_type_script_lang_js_); 
+// CONCATENATED MODULE: ./src/components/OliveChip.vue
+
+
+
+
+
+/* normalize component */
+
+var OliveChip_component = normalizeComponent(
+  components_OliveChipvue_type_script_lang_js_,
+  OliveChipvue_type_template_id_ff3627b8_render,
+  OliveChipvue_type_template_id_ff3627b8_staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* harmony default export */ var OliveChip = (OliveChip_component.exports);
+
+/* vuetify-loader */
+
+
+installComponents_default()(OliveChip_component, {VChip: VChip_VChip})
+
+// CONCATENATED MODULE: ./src/library.js
+
+
+var VueShareComponentLibrary = {
   install: function install(Vue) {
     // Let's register our component globally
     // https://vuejs.org/v2/guide/components-registration.html
-    Vue.component("hello-world", HelloWorld);
+    Vue.component("olive-button", OliveButton);
+    Vue.component("olive-chip", OliveChip);
   }
 }; // Automatic installation if Vue has been added to the global scope.
 
 if (typeof window !== 'undefined' && window.Vue) {
-  window.Vue.use(HelloWorldSimple);
+  window.Vue.use(VueShareComponentLibrary);
 }
 
-/* harmony default export */ var src_install = (HelloWorldSimple);
+/* harmony default export */ var library = (VueShareComponentLibrary);
 // CONCATENATED MODULE: ./node_modules/@vue/cli-service/lib/commands/build/entry-lib.js
 
 
-/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (src_install);
+/* harmony default export */ var entry_lib = __webpack_exports__["default"] = (library);
 
 
 
@@ -11295,4 +12215,4 @@ module.exports = global.Promise;
 
 /******/ });
 });
-//# sourceMappingURL=vue-hello-world-simple.umd.js.map
+//# sourceMappingURL=vuejs-shared-components.umd.js.map

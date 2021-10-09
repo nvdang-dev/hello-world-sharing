@@ -2,12 +2,11 @@
   "name": "vuejs-shared-components",
   "version": "0.1.0",
   "private": true,
-  "main": "./dist/vue-hello-world-simple.common.js",
+  "main": "./dist/vuejs-shared-components.common.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "build-library" : "vue-cli-service build --target lib --name vue-hello-world-simple ./src/install.js"
+    "build": "vue-cli-service build --target lib --name vuejs-shared-components ./src/library.js",
+    "dev": "vue-cli-service serve",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
     "core-js": "^3.6.5",
